@@ -15,9 +15,10 @@
 }
 
 hr {
-    width: 85%;
-    border-color: var(--text);
+    width: 100%;
+    border: 3px solid white;
     transition: 0.4s !important;
+    margin-top:30px;
   }
   
 .align-right {
@@ -132,4 +133,39 @@ a {
   font-size: 18px;
   color: var(--text);
   padding-top: 20px;
+}
+
+.legacy h4{
+  border: #555b6e solid 2px;
+  color: var(--text);
+  font-family: 'Poiret One', cursive;
+  font-size: 18px;
+  width: 10%;
+  margin-top: 40px;
+  padding: 7px;
+  cursor: pointer;
+}
+
+/*LATEST*/
+.funni{
+  padding: 0px;
+  overflow-x: hidden;
+  background-color: var(--ajib-black);
+}
+
+.funni h1{
+  font-size: 55px;
+  color: var(--ajib-white);
+  letter-spacing: 15px;
+}
+
+.funni hr {
+  width: 100%;
+  border: 4px solid white;
+  transition: 0.4s !important;
+  margin-top:30px;
+}
+
+.funni .row{
+  padding-bottom: 2%;
 }
