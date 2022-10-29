@@ -1,97 +1,104 @@
-body {
-    background: aliceblue;
-  }
-  
-  .gtco-testimonials {
+:root{
+  --text: #555b6e;
+  --black: #000;
+  --ajib-white: #eef0f2;
+  --white: #faf9f9;
+  --ajib-black: #171717;
+  --dark-red: #7a1212;
+  --light: #111;
+}
+
+  .e {
     position: relative;
     margin-top: 30px;
   }
-  .gtco-testimonials h2 {
+  .e h2 {
     font-size: 50px;
     text-align: center;
-    color: #555;
+    color: #eee;
     margin-bottom: 50px;
+    padding-top: 30px;
   }
-  .gtco-testimonials .owl-stage-outer {
+  .e .owl-stage-outer {
     padding: 30px 0;
   }
-  .gtco-testimonials .owl-nav {
+  .e .owl-nav {
     display: none;
   }
-  .gtco-testimonials .owl-dots {
+  .e .owl-dots {
     text-align: center;
   }
-  .gtco-testimonials .owl-dots span {
+  .e .owl-dots span {
     position: relative;
     height: 10px;
     width: 10px;
     border-radius: 50%;
     display: block;
-    background: #fff;
-    border: 2px solid #01b0f8;
+    background: var(--ajib-black);
+    border: 2px solid var(--dark-red);
     margin: 0 5px;
   }
-  .gtco-testimonials .owl-dots .active {
+  .e .owl-dots .active {
     box-shadow: none;
   }
-  .gtco-testimonials .owl-dots .active span {
-    background: #01b0f8;
+  .e .owl-dots .active span {
+    background: var(--dark-red);
     box-shadow: none;
     height: 12px;
     width: 12px;
     margin-bottom: -1px;
   }
-  .gtco-testimonials .card {
-    background: #fff;
-    box-shadow: 0 8px 30px -7px #c9dff0;
+  .e .card {
+    background: var(--ajib-black);
+    box-shadow: 0 8px 30px -7px var(--dark-red);
     margin: 0 20px;
     padding: 0 10px;
     border-radius: 20px;
     border: 0;
   }
-  .gtco-testimonials .card .card-img-top {
+  .e .card .card-img-top {
     max-width: 100px;
-    border-radius: 50%;
+    border-radius: 20px;
     margin: 15px auto 0;
-    box-shadow: 0 8px 20px -4px #95abbb;
-    width: 100px;
-    height: 100px;
+    box-shadow: 0 8px 20px -4px var(--dark-red);
+    height: 340px;
+    width: 250px;
   }
-  .gtco-testimonials .card h5 {
-    color: #01b0f8;
+  .e .card h5 {
+    color: var(--dark-red);
     font-size: 21px;
     line-height: 1.3;
   }
-  .gtco-testimonials .card h5 span {
+  .e .card h5 span {
     font-size: 18px;
     color: #666666;
   }
-  .gtco-testimonials .card p {
+  .e .card p {
     font-size: 18px;
     color: #555;
     padding-bottom: 15px;
   }
-  .gtco-testimonials .active {
+  .e .active {
     opacity: 0.5;
     transition: all 0.3s;
   }
-  .gtco-testimonials .center {
+  .e .center {
     opacity: 1;
   }
-  .gtco-testimonials .center h5 {
+  .e .center h5 {
     font-size: 24px;
   }
-  .gtco-testimonials .center h5 span {
+  .e .center h5 span {
     font-size: 20px;
   }
-  .gtco-testimonials .center .card-img-top {
+  .e .center .card-img-top {
     max-width: 100%;
-    height: 120px;
-    width: 120px;
+    height: 380px;
+    width: 320px;
   }
   
   @media (max-width: 767px) {
-    .gtco-testimonials {
+    .e {
       margin-top: 20px;
     }
   }
