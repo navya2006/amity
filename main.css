@@ -64,14 +64,6 @@ a {
     height: 100%;
 }
 
-.home img{
-    height: 70%;
-    width: 70%;
-    border: var(--white) 3px solid;
-    margin-top: 8%;
-    border-radius: 1%;
-}
-
 .home h1 {
     font-size: 110px;
     font-family: 'Poppins', sans-serif;
@@ -203,3 +195,30 @@ a {
 }
 
 /*GUITARS*/
+.guitar{
+  width: 100%;
+  height: 70%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.guitar::before{
+  position: absolute;
+  background-attachment: fixed;
+  background-image: url("images/funni.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  content: "";
+  height: 70%;
+  width: 100%;
+  z-index: -1;
+}
+
+
+.guitar h1 {
+  font-size: 110px;
+  font-family: 'Poppins', sans-serif;
+  color: var(--ajib-white);
+  text-align: center;
+  padding-top: 20%;
+}
