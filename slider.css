@@ -57,10 +57,10 @@
     border: 0;
   }
   .e .card .card-img-top {
-    max-width: 100px;
+    max-width: 250px;
     margin: 15px auto 0;
     /*box-shadow: 0 8px 20px -4px var(--dark-red);*/
-    height: 280px;
+    height: 300px;
     width: 250px;
   }
   .e .card h5 {
