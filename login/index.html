@@ -53,7 +53,7 @@
                     <div class="col-md-8" data-aos="fade-up">
                         <div class="market-item">
                             <div class="market-img align-left">
-                                <img src="lib/person1.jpg" alt="">
+                                <img src="lib/person1.jpeg" alt="">
                             </div>
                             <div class="market-text">
                                 <h5>John Doe</h5>
@@ -69,7 +69,7 @@
                     <div class="col-md-8" data-aos="fade-up">
                         <div class="market-item">
                             <div class="market-img align-left">
-                                <img src="lib/person2.jpg" alt="">
+                                <img src="lib/person2.jpeg" alt="">
                             </div>
                             <div class="market-text">
                                 <h5>Jack Doe</h5>
@@ -85,7 +85,7 @@
                     <div class="col-md-8" data-aos="fade-up">
                         <div class="market-item">
                             <div class="market-img align-left">
-                                <img src="lib/person3.jpg" alt="">
+                                <img src="lib/person3.jpeg" alt="">
                             </div>
                             <div class="market-text">
                                 <h5>Jane Doe</h5>
@@ -101,7 +101,7 @@
                     <div class="col-md-8" data-aos="fade-up">
                         <div class="market-item">
                             <div class="market-img align-left">
-                                <img src="lib/person4.jpg" alt="">
+                                <img src="lib/person4.jpeg" alt="">
                             </div>
                             <div class="market-text">
                                 <h5>Jolly Doe</h5>
@@ -117,7 +117,7 @@
                     <div class="col-md-8" data-aos="fade-up">
                         <div class="market-item">
                             <div class="market-img align-left">
-                                <img src="lib/person5.jpg" alt="">
+                                <img src="lib/person5.jpeg" alt="">
                             </div>
                             <div class="market-text">
                                 <h5>Jimmy Doe</h5>
@@ -139,6 +139,57 @@
     </div>
 
     <!--FOOTER-->
+    <div class="section fp-auto-height footer" id="footer">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <h1>SAY HI!</h1>
+            <!--COMMENT FORM-->
+                <div class="comment_input">
+                            <input type="text" name="Name" id="name" placeholder="Name..." required>
+                            <input type="email" name="Email" id="email" placeholder="Email Id..." required>
+                    <textarea type="text" name="comment" id="comment" placeholder="Comment..." rows="1" class="auto_height"
+                        oninput="auto_height(this)" required></textarea>
+                    <br>
+                    <input type="hidden" name="comment_post_ID" value="" id="comment_post_ID" />
+                    <br>
+                    <div class="alert text-danger">please input a valid value</div>
+                    <button class="btn" name="submit" type="submit" id="compost" value="">Submit comment</button>
+                </div>
+            </div>
+    
+            <div class="col-md-3">
+                <h1>Vibe</h1>
+                <a href="#home">
+                    <img class="e" src="lib/guitar.jpeg">
+                </a>
+            </div>
+    
+            <div class="col-md-3">
+                <h1>FIND US AT</h1>
+                <p><b>Vibe</b><br><br>
+                    Tagore International School <br> Vasant Vihar <br><br>
+                Made by: <br>
+            Navya Arora <br>
+        Shiven Agarwal<br>
+    Utkarsh Mishra <br>
+    Simrat Oberoi<br>
+    Maalav Chakravorty</p>
+            </div>
+    
+            <div class="col-md-1"></div>
+        </div>
+    
+        <div class="row">
+            <div class="col-md-1"></div>
+                <div class="col-md-4">
+                    <hr class="section-hr">
+                    <h2>&copy; All rights reserved 2022</h2>
+                </div>
+                <div class="col-md-6"></div>
+                <div class="col-md-1"></div>
+        </div>
+    </div>
 
 
     </div>
@@ -154,6 +205,9 @@
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="fontawesome.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
