@@ -1,7 +1,7 @@
 :root{
   --text: #555b6e;
   --black: #000;
-  --white: #8e6334;
+  --ajib-white: #8e6334;
   --white: #eef0f2;
   --ajib-black: #121212;
   --dark-red: #de4949;
@@ -16,11 +16,11 @@
 }
 
 hr {
-    width: 100%;
-    border: 3px solid white;
-    transition: 0.4s !important;
-    margin-top:30px;
-  }
+  width: 60%;
+  border-color: var(--white);
+  border: 1px solid white;
+  transition: 0.4s !important;
+}
   
 .align-right {
     text-align: right !important;
@@ -66,11 +66,27 @@ a {
 }
 
 .home h1 {
-    font-size: 110px;
-    font-family: 'Poppins', sans-serif;
+    font-size: 150px;
+    font-family: 'Great Vibes', cursive;
     color: var(--white);
     text-align: center;
     padding-top: 20%;
+}
+
+.home h2{
+    font-size: 20px;
+    font-family: 'Cabin', sans-serif;
+    color: var(--white);
+    text-align: center;
+    border: 1px #eee solid;
+    border-radius: 20px;
+    padding: 7px 10px;
+    width: 17%;
+    transition: 0.25s;
+}
+
+.home h2:hover{
+  border: 3px #eee solid;
 }
 
 /*HOME PT2*/
@@ -177,10 +193,11 @@ a {
   width: 320px;
   height: 500px;
   transition: 0.4s;
+  filter: grayscale(70%);
 }
 
 .play img:hover{
-  filter: sepia(100%);
+  filter: none;
 }
 
 /*VIDEO*/
@@ -207,8 +224,14 @@ a {
   padding: 5%;
 }
 
-/*
-.guitar::before{
+/*TOUR*/
+.tour{
+  width: 100%;
+  height: 60vw;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.tour::before{
   position: absolute;
   background-attachment: fixed;
   background-image: url("images/funni.jpeg");
@@ -216,8 +239,54 @@ a {
   background-size: cover;
   background-position: center;
   content: "";
-  height: 100%;
+  height: 60vw;
   width: 100%;
   z-index: -1;
 }
-*/
+
+.space {
+  padding: 3vw;
+  padding-top: 3vw;
+}
+
+.tour .space .bod{
+  border: 3px solid #fff;
+  padding-bottom: 2vw;
+}
+
+.tour .space .bod h1{
+  font-size: 70px;
+  color: #fff;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 3%;
+}
+
+.tour .bod .info{
+  color: #fff;
+  font-size: 2vw;
+  padding-left: 8vw;
+  padding-bottom: 1vw;
+  padding-top: 1vw;
+  font-family: 'Raleway', sans-serif;
+}
+
+.tour .bod .view{
+  color: #222;
+  background-color: #888;
+  text-align: center;
+  padding: 1vw;
+  font-size: 20px;
+  margin-top: 1.5vw;
+  margin-left: 40vw;
+  margin-right: 40vw;
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+  transition: 0.4s;
+  border: 2px solid #000;
+}
+
+.tour .bod .view:hover{
+  background-color: #555;
+  color: #fff;
+}
