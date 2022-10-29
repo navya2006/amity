@@ -50,7 +50,7 @@
   }
   .e .card {
     background: var(--ajib-black);
-    box-shadow: 0 8px 30px -7px var(--dark-red);
+    box-shadow: 0 8px 30px -7px var(--black);
     margin: 0 20px;
     padding: 0 10px;
     border-radius: 20px;
@@ -58,9 +58,8 @@
   }
   .e .card .card-img-top {
     max-width: 100px;
-    border-radius: 20px;
     margin: 15px auto 0;
-    box-shadow: 0 8px 20px -4px var(--dark-red);
+    /*box-shadow: 0 8px 20px -4px var(--dark-red);*/
     height: 280px;
     width: 250px;
   }
