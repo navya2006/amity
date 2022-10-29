@@ -174,14 +174,30 @@ a {
 .play{
    overflow-x: hidden;
    padding: 5%;
+   padding-bottom: 0px;
 }
 
 .play img{
   width: 320px;
-  height: 400px;
+  height: 420px;
   transition: 0.4s;
 }
 
 .play img:hover{
   filter: sepia(100%);
+}
+
+/*VIDEO*/
+.video{
+  padding: 5%;
+  padding-top: 0%;
+}
+
+.video p{
+  color: #eee;
+}
+
+.video video{
+  height: 90%;
+  width: 100%;
 }
