@@ -3,7 +3,7 @@
   --black: #000;
   --white: #8e6334;
   --white: #eef0f2;
-  --ajib-black: #171717;
+  --ajib-black: #121212;
   --dark-red: #de4949;
   --light: #111;
   --red: #450e0e;
@@ -203,7 +203,7 @@ a {
 .guitar{
   width: 100%;
   overflow-x: hidden;
-  background-color: var(--red);
+  background-color: var(--ajib-black);
   padding: 5%;
 }
 
