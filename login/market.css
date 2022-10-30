@@ -96,6 +96,7 @@ html {
 
 body {
     transition: 0.25s;
+    background-color: var(--ajib-black);
 }
 
 hr {
@@ -138,180 +139,41 @@ a:hover {
 }
 
 
-/* SECTIONS */
-
-.section {
-    z-index: 1;
-    background-color: var(--bg-color);
-    color: var(--font-color);
-    transition: 0.4s;
-    padding: 75px 0px;
-}
-
-.section-hr {
-    height: 5px;
-    width: 60%;
-    background-image: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-    margin: 10px;
-}
-
-.section .row {
-    padding: 10px;
-}
-
-h3.section-title {
-    font-size: 35px;
-}
-
-.section-title {
-    font-family: 'apercu', sans-serif;
-    font-weight: 800;
-    font-size: 50px;
-    padding: 10px;
-}
-
-.section-text {
-    font-size: 20px;
-    padding: 10px;
-    font-family: 'open sans', sans-serif;
-}
-
-/* HOME */
-
-.home {
-    min-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-bottom: none;
-}
-
-.market-home {
-    min-height: 70vh;
-}
-
-.market-home .home-text {
-    margin-top: 10vh;
-}
-
-.market-home .back {
-    height: 70vh;
-    background-color: rgba(#121212)
-}
-
-.back {
-    height: 100vh;
-    width: 100vw;
-    background-size: cover;
-    background-color: #111;
-    background-position: center;
-    background-repeat: no-repeat;
+/*BACKGROUND*/
+.bg{
+    width: 100%;
+    height: 70%;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+.bg::before{
     position: absolute;
-    top: 0;
-    left: 0;
+    background-attachment: fixed;
+    background-image: url("lib/guitars.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    content: "";
+    height: 70%;
+    width: 100%;
     z-index: -1;
-}
+  }
 
-.home-text {
-    margin-top: 25vh;
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 30px;
-}
-
-.home-img {
-    padding-top: 20vh;
-}
-
-.home-img img {
-    width: 100%;
-    filter: invert(1);
-}
-
-.home-text h1 {
-    font-size: 60px;
-    font-family: 'apercu', sans-serif;
-    font-weight: 800;
-}
-
-.home-links {
-    margin-top: 20px;
-}
-
-.home-text h3 {
-    font-size: 30px;
-    font-family: 'apercu', sans-serif;
-    font-weight: 800;
-}
-
-.home a {
-    font-size: 18px;
-    font-family: 'open sans', sans-serif;
-    text-transform: uppercase;
-}
-
-a.enter {
-    background-color: #eef0f2;
-    border-radius: 15px;
-    padding: 7px 15px;
-    transition: 0.25s;
+  .bg h1,
+  .bg h2 {
+    font-size: 90px;
+    font-family: 'Cabin', sans-serif;
+    letter-spacing: 23px;
+    color: var(--white);
     text-align: center;
-    margin: 5px;
-    color: #000;
-}
-/* MARKET */
-
-.market {
-    background-color: #121212;
-    color: #fdfdfe;
-}
-
-.market-item {
-    border-radius: 15px;
-    background-color: #450e0e;
-    color: #fdfdfe;
-    margin: 20px 1px;
-    box-shadow:rgba(16, 6, 19, 0.2) 0px 0px 10px;
-    transition: 0.25s;
-}
-
-.market .section-hr {
-    background: #fdfdfe;
-}
-
-.market-item:hover {
-    transform: translateY(-10px);
-    -webkit-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
-    -o-transform: translateY(-10px);
-}
-
-.coin {
-    height: 25px;
-    margin: 0px 5px;
-}
-
-.market-text {
-    padding: 10px 30px 20px 30px;
-}
-
-.purchase {
-    padding: 5px 10px;
-    background-color: #100613;
-    color: #fdfdfe !important;
-    text-transform: uppercase;
-    font-size: 12px;
-    border-radius: 10px;
-}
-
-.market-img {
-    border-radius: 50%;
-    height: 200px;
-    padding: 20px;
-}
-
-.market-img img {
-    height: 100%;
-    border-radius: 50%;
-}
+    font-weight: 700;
+  }
+  
+  .bg h2 {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(255,255,255,0.4);
+  }
 
 /*FOOTER*/
 .footer{

@@ -72,12 +72,13 @@ a:hover{
 }
 
 .home h1,
-h2 {
-  font-size: 90px;
+.home h2 {
+  font-size: 80px;
   font-family: 'Cabin', sans-serif;
   letter-spacing: 23px;
   color: var(--white);
   text-align: center;
+  font-weight: 700;
 }
 
 .home h2 {
