@@ -1,4 +1,4 @@
-:root{
+:root {
   --text: #555b6e;
   --black: #000;
   --ajib-white: #8e6334;
@@ -9,10 +9,10 @@
   --red: #450e0e;
 }
 
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
 hr {
@@ -21,60 +21,108 @@ hr {
   border: 1px solid white;
   transition: 0.4s !important;
 }
-  
-.align-right {
-    text-align: right !important;
-  }
-  
-.align-left {
-    text-align: left !important;
-  }
-  
-.align-center {
-    text-align: center !important;
-  }
-  
-.right {
-    float: right !important;
-  }
-  
-.left {
-    float: left !important;
-  }
-  
-a {
-    text-decoration: none !important;
-    color: #fff;
-  }
 
-a:hover{
+#trailer {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 20px;
+
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 10000;
+
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 500ms ease;
+
+  display: grid;
+  place-items: center;
+}
+
+#trailer:not([data-type=""]) > #trailer-icon {
+  opacity: 1;
+}
+
+#trailer-icon {
+  font-size: 6px;
+  line-height: 4px;
+
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
+.align-right {
+  text-align: right !important;
+}
+
+.align-left {
+  text-align: left !important;
+}
+
+.align-center {
+  text-align: center !important;
+}
+
+.right {
+  float: right !important;
+}
+
+.left {
+  float: left !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: #fff;
+}
+
+a:hover {
   text-decoration: none !important;
   color: #eee;
 }
 
 /*BODY*/
-  body{
-    width: 100%;
-    background-color: var(--ajib-black);
-    overflow-x: hidden;
-    -webkit-user-select: none;
+body {
+  width: 100%;
+  min-height: 100%;
+  background-color: var(--ajib-black);
+  overflow-x: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+}
+body:hover > #trailer {
+  opacity: 1;
 }
 
 /*HOME*/
-.home{
-    background-image: url(images/guitar.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    padding-top: 20vh;
+.home {
+  background-image: url(images/guitar.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#interactab {
+  height: 2.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .home h1,
 .home h2 {
   font-size: 80px;
-  font-family: 'Cabin', sans-serif;
+  font-family: "Cabin", sans-serif;
   letter-spacing: 23px;
   color: var(--white);
   text-align: center;
@@ -84,40 +132,30 @@ a:hover{
 .home h2 {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgba(255,255,255,0.4);
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.4);
 }
 
-.home h4{
-    position: absolute;
-    font-size: 22px;
-    font-family: 'Cabin', sans-serif;
-    color: #eee;
-    text-align: center;
-    border-radius: 20px;
-    padding: 7px 10px;
-    transition: 0.25s;
-    bottom: 20px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
+.home h4 {
+  font-size: 30px;
+  font-family: "Cabin", sans-serif;
+  color: #eee;
+  text-align: center;
+  border-radius: 20px;
 }
-
-.home h4:hover{
-  transform: translateY(-10px);
-  text-shadow: rgba(255,255,255,0.5) 0px 3px 5px;
+.home > h4 > div {
+  padding: 1em;
 }
-
 @media screen and (max-width: 500px) {
-   .home h1,h2 {
-      font-size: 30px;
-      color: #fff;
-      letter-spacing: 5px;
+  .home h1,
+  h2 {
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 5px;
   }
 }
 
 /*HOME PT2*/
-.start{
+.start {
   padding: 5%;
   padding-bottom: 1%;
   padding-top: 7%;
@@ -125,23 +163,23 @@ a:hover{
   background-color: var(--ajib-black);
 }
 
-.start img{
+.start img {
   height: 300px;
   width: 300px;
   border-radius: 20px;
 }
 
-.start h2{
+.start h2 {
   color: var(--white);
   font-size: 35px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   padding-top: 30px;
 }
 
-.start h4{
+.start h4 {
   border: #eee solid 2px;
   color: #eee;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   width: 40%;
   margin-top: 40px;
@@ -149,33 +187,33 @@ a:hover{
   cursor: pointer;
 }
 
-.start .row{
+.start .row {
   padding-bottom: 5%;
 }
 
 /*ABOUT*/
-.legacy{
+.legacy {
   overflow-x: hidden;
   padding: 5%;
   background-color: var(--ajib-black);
 }
 
-.legacy h1{
+.legacy h1 {
   font-size: 27px;
   color: var(--white);
   padding-top: 20px;
 }
 
-.legacy p{
+.legacy p {
   font-size: 18px;
   color: var(--text);
   padding-top: 20px;
 }
 
-.legacy h4{
+.legacy h4 {
   border: #555b6e solid 2px;
   color: var(--text);
-  font-family: 'Poiret One', cursive;
+  font-family: "Poiret One", cursive;
   font-size: 18px;
   width: 15%;
   margin-top: 40px;
@@ -184,13 +222,13 @@ a:hover{
 }
 
 /*LATEST*/
-.funni{
+.funni {
   padding: 0px;
   overflow-x: hidden;
   background-color: var(--ajib-black);
 }
 
-.funni h1{
+.funni h1 {
   font-size: 55px;
   color: var(--white);
   letter-spacing: 15px;
@@ -200,49 +238,49 @@ a:hover{
   width: 100%;
   border: 4px solid white;
   transition: 0.4s !important;
-  margin-top:30px;
+  margin-top: 30px;
   opacity: 1;
   background: white;
 }
 
-.funni .row{
+.funni .row {
   padding-bottom: 2%;
 }
 
 /*PLAY*/
-.play{
-   overflow-x: hidden;
-   padding: 5%;
-   padding-bottom: 0px;
+.play {
+  overflow-x: hidden;
+  padding: 5%;
+  padding-bottom: 0px;
 }
 
-.play img{
+.play img {
   width: 100%;
   height: auto;
   transition: 0.4s;
   filter: grayscale(70%);
 }
 
-.play img:hover{
+.play img:hover {
   filter: none;
 }
 
 /*VIDEO*/
-.video{
+.video {
   padding-top: 0%;
   padding-bottom: 0px;
 }
 
-.video p{
+.video p {
   color: #eee;
 }
 
-.video video{
+.video video {
   width: 100%;
 }
 
 /*GUITARS*/
-.guitar{
+.guitar {
   width: 100%;
   overflow-x: hidden;
   background-color: var(--ajib-black);
@@ -250,13 +288,13 @@ a:hover{
 }
 
 /*TOUR*/
-.tour{
+.tour {
   width: 100%;
   height: 60vw;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
-.tour::before{
+.tour::before {
   position: absolute;
   background-attachment: fixed;
   background-image: url("images/funni.jpeg");
@@ -274,29 +312,29 @@ a:hover{
   padding-top: 3vw;
 }
 
-.tour .space .bod{
+.tour .space .bod {
   border: 3px solid #fff;
   padding-bottom: 2vw;
 }
 
-.tour .space .bod h1{
+.tour .space .bod h1 {
   font-size: 70px;
   color: #fff;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   padding-top: 3%;
 }
 
-.tour .bod .info{
+.tour .bod .info {
   color: #fff;
   font-size: 2vw;
   padding-left: 8vw;
   padding-bottom: 1vw;
   padding-top: 1vw;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
-.tour .bod .view{
+.tour .bod .view {
   color: #222;
   background-color: #888;
   text-align: center;
@@ -305,63 +343,63 @@ a:hover{
   margin-top: 1.5vw;
   margin-left: 40vw;
   margin-right: 40vw;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   cursor: pointer;
   transition: 0.4s;
   border: 2px solid #000;
 }
 
-.tour .bod .view:hover{
+.tour .bod .view:hover {
   background-color: #555;
   color: #fff;
 }
 
 /*FOOTER*/
-.footer{
+.footer {
   background-attachment: fixed;
   background-color: var(--ajib-black);
   width: 100%;
   padding: 2%;
 }
 
-.footer .e{
+.footer .e {
   height: 280px;
-    width: 280px;
+  width: 280px;
 }
 
-.footer h1{
+.footer h1 {
   color: #eee;
   font-size: 27px;
   text-align: left;
   padding-top: 7%;
 }
 
-.footer h3{
+.footer h3 {
   padding: 1%;
   font-size: 18px;
   color: #eee;
 }
 
-.footer p{
-  font-family:'Raleway', sans-serif;
+.footer p {
+  font-family: "Raleway", sans-serif;
   padding: 1%;
   font-size: 17px;
   color: #eee;
 }
 
-.footer h2{
+.footer h2 {
   padding: 1%;
   font-size: 20px;
   color: #eee;
 }
 
 @media screen and (max-width: 500px) {
-  .footer h2{
-      padding-top: 7%;
+  .footer h2 {
+    padding-top: 7%;
   }
 }
 
-.footer .row{
+.footer .row {
   padding: 1%;
 }
 
@@ -379,9 +417,10 @@ a:hover{
   border-radius: 20px;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
 }
-*/ 
+*/
 
-input, textarea {
+input,
+textarea {
   background-color: transparent;
   border: transparent solid 2px;
   color: var(--six);
@@ -398,7 +437,7 @@ input:focus, textarea:focus {
 }
 */
 
-.btn{
+.btn {
   border: #eee solid 2px;
   color: #eee;
   background-color: transparent;
@@ -409,7 +448,7 @@ input:focus, textarea:focus {
   width: auto;
 }
 
-.btn:hover{
+.btn:hover {
   background-color: #fff;
   border: #fff solid 2px;
 }
