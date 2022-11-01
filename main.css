@@ -129,6 +129,8 @@ body:hover > #trailer {
 .siu:hover {
   color: rgb(5, 5, 5);
   text-decoration: none;
+  transition: 500ms;
+  cursor: default;
 }
 .home h1,
 .home h2 {
