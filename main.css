@@ -27,11 +27,10 @@ hr {
   width: 20px;
   background-color: white;
   border-radius: 20px;
-
   position: fixed;
   left: 0px;
   top: 0px;
-  z-index: 10000;
+  z-index: 100;
 
   pointer-events: none;
   opacity: 0;
@@ -117,8 +116,20 @@ body:hover > #trailer {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  z-index: 101;
+  position: relative;
 }
+.siu {
+  mix-blend-mode: difference;
 
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  transition: 400ms;
+}
+.siu:hover {
+  color: rgb(5, 5, 5);
+  text-decoration: none;
+}
 .home h1,
 .home h2 {
   font-size: 80px;
