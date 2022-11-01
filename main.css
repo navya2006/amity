@@ -93,7 +93,11 @@ body {
 body:hover > #trailer {
   opacity: 1;
 }
-
+.center {
+  display: grid;
+  place-items: center;
+  padding: 0.5em 1em;
+}
 /*HOME*/
 .home {
   background-image: url(images/guitar.jpeg);
@@ -109,10 +113,11 @@ body:hover > #trailer {
   align-items: center;
 }
 
-#interactab {
+.interactab {
   height: 2.5em;
   padding-left: 1em;
   padding-right: 1em;
+  width: max-content;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -121,17 +126,19 @@ body:hover > #trailer {
 }
 .siu {
   mix-blend-mode: difference;
-
+  display: grid;
+  place-items: center;
   font-size: 24px;
   color: rgb(255, 255, 255);
-  transition: 400ms;
+  margin: 0.25em 1em;
+  transition: 150ms;
 }
-.siu:hover {
+/* .siu:hover {
   color: rgb(5, 5, 5);
-  text-decoration: none;
   transition: 500ms;
   cursor: default;
-}
+  letter-spacing: 0.15em;
+} */
 .home h1,
 .home h2 {
   font-size: 80px;
@@ -199,9 +206,19 @@ body:hover > #trailer {
   padding: 10px;
   cursor: pointer;
 }
-
+#interactab2 {
+  border: 2px solid white;
+  height: 3.5em;
+}
 .start .row {
   padding-bottom: 5%;
+}
+.explore-grid {
+  row-gap: 1em;
+  display: grid;
+  grid-template-areas:
+    "img1 explr img2"
+    "img3 img4 img5";
 }
 
 /*ABOUT*/

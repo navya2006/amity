@@ -49,36 +49,35 @@
       <h2>LOOKING FOR A VIBE?</h2>
       <h1>LOOKING FOR A VIBE?</h1>
       <h2>LOOKING FOR A VIBE?</h2>
-      <div class="coolstuff" id="interactab" data-type="button">
-        <a href="login/login.html"
-          ><div class="siu">STEP INTO THE SPOTLIGHT</div></a
-        >
+      <div class="interactab" id="interactab" data-type="button" onmouseover="getid(this);hovfect(this)" onmouseleave="gofect(this)">
+        <div class="siu" onclick="window.location.href='login/login.html';">STEP INTO THE SPOTLIGHT</div>
       </div>
     </div>
 
     <!--section2-->
     <div class="start">
-      <div class="row">
-        <div class="col-md-4">
+      <div class="explore-grid">
+        <div style="grid-area:img1">
           <center><img src="images/a1.png" /></center>
         </div>
-        <div class="col-md-4">
+        <div style="grid-area:explr" class="center">
           <center><h2>If Music Is The Food Of Love Play On</h2></center>
-          <center><h4>Explore more</h4></center>
+          <div class="center interactab" data-type="button" id="interactab2" onmouseover="getid(this);hovfect(this)" onmouseleave="gofect(this)"><div class="siu">Explore more</h4></div>
+          </div>
         </div>
-        <div class="col-md-4">
+        <div style="grid-area: img2;">
           <center><img src="images/a2.png" /></center>
         </div>
-      </div>
+      
 
-      <div class="row">
-        <div class="col-md-4">
+      
+        <div style="grid-area: img3;">
           <center><img src="images/a4.png" /></center>
         </div>
-        <div class="col-md-4">
+        <div style="grid-area: img4;">
           <center><img src="images/a6.png" /></center>
         </div>
-        <div class="col-md-4">
+        <div style="grid-area: img5;">
           <center><img src="images/a3.png" /></center>
         </div>
       </div>

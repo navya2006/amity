@@ -1,11 +1,13 @@
 window.onload = function () {
     const trailer = document.getElementById("trailer");
 };
-
+function getid(obj) {
+  window.elem=(obj.id);
+}
 const animateTrailer = (e, interacting, boxt) => {
   const x = e.clientX - trailer.offsetWidth / 2,
         y = e.clientY - trailer.offsetHeight / 2;
-  const act=document.getElementById("interactab");
+  var act=document.getElementById(window.elem);
   var keyframes = {
     transform: `translate(${x}px, ${y}px) scale(${interacting ? 8 : 1})`,
     height:`20px`,
@@ -26,7 +28,7 @@ const animateTrailer = (e, interacting, boxt) => {
   }
 }
   trailer.animate(keyframes, { 
-    duration: 600, 
+    duration: 800, 
     fill: "forwards" 
   });
 }
@@ -45,7 +47,7 @@ const getTrailerClass = type => {
 window.onmousemove = e => {
   const interactable = e.target.closest(".interactable"),
         interacting = interactable !== null;
-  const box= e.target.closest("#interactab"),
+  const box= e.target.closest(".interactab") ,
         boxt=box!== null;
   const icon = document.getElementById("trailer-icon");
   
@@ -56,4 +58,16 @@ window.onmousemove = e => {
   if(interacting) {
     icon.className = getTrailerClass(interactable.dataset.type);
   }
+}
+
+function hovfect(ye){
+  var siu=ye.firstElementChild;
+  siu.style.color="black";
+  siu.style.cursor="default";
+  siu.style.letterSpacing="0.2em"
+}
+function gofect(ye){
+  var siu=ye.firstElementChild;
+  siu.style.color="white";
+  siu.style.letterSpacing="0"
 }
