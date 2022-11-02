@@ -10,7 +10,7 @@ $('#submitb').on('click', function(event){
     const pass = $('#password').val();
     const promise = authRoot.signInWithEmailAndPassword(mail, pass);
     promise.then(function (){
-        window.location.replace("index.html");
+        window.location.replace("dashboard/index.html");
 
     }).catch(function (e) {
         console.log(e);
