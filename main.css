@@ -139,6 +139,25 @@ body:hover > #trailer {
   cursor: default;
   letter-spacing: 0.15em;
 } */
+
+/*NAVBAR*/
+.navb {
+	width:100%;
+	position:fixed;
+	top:0;
+	z-index:999;
+    padding: 10px 15px;
+	transition: 0.6s;
+}
+
+.navb img{
+    height: 6%;
+    width: 6%;
+    float: left;
+    padding: 0.5%;
+}
+
+/*HOME*/
 .home h1,
 .home h2 {
   font-size: 80px;
