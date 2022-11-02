@@ -19,6 +19,7 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .home {
@@ -28,12 +29,11 @@
 
 .login {
   background-color: var(--ajib-black);
-  margin-top: 8%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
   color: var(--font-color);
   transition: 0.25s;
   text-align: center;
   border-radius: 2em;
+  height: 100vh;
 }
 
 .register {
@@ -54,7 +54,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  background-image: url(lib/bright.jpeg);
+  background-color: #121212;
   background-attachment: fixed;
   content: "";
   height: 100%;
@@ -90,7 +90,7 @@
 }
 
 .home::after {
-  background-image: var(--home-texture);
+  background-color: #121212;
   position: absolute;
   background-attachment: scroll;
   background-repeat: no-repeat;
@@ -149,9 +149,22 @@ h3.section-title {
 }
 
 .login-form {
-  padding: 40;
+  width: 100%;
 }
 
+.hey-c {
+  position: relative;
+}
+
+.hey {
+  position: absolute;
+  bottom: 0;
+  top: 50%;
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(7px);
+  z-index: 3;
+}
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -170,15 +183,15 @@ input[type="submit"] {
   border: var(--primary-color) solid 2px;
   color: var(--font-color);
   background: none;
-  border-radius: 30px;
-  padding: 10 20;
+  border-radius: 7px;
+  padding: 0.75em 3em;
   transition: 0.5s;
   margin: 5px auto;
 }
 
 input[type="submit"]:hover {
   background: var(--primary-color);
-  color: #fff;
+  color: crimson;
 }
 
 input[type="text"]:focus-within,
@@ -202,6 +215,22 @@ textarea:focus-within {
   background-position: right;
   background-size: cover;
   min-height: 400;
+}
+
+.okay-i-pull-up {
+  height: 20vh;
+  width: 20vh;
+  border-radius: 100%;
+  background-color: crimson;
+}
+
+.jai-madhu {
+  color: crimson;
+  transition: 0.25s;
+}
+
+.jai-madhu:hover {
+  color: red;
 }
 
 .section-text {
