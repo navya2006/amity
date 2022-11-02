@@ -1,6 +1,6 @@
 firebase.auth().onAuthStateChanged(firebaseUser => {
     if(firebaseUser){
     } else{
-        window.location.replace('index.html');
+        window.location.replace('dashboard/index.html');
     }
 })
