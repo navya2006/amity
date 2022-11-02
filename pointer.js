@@ -64,10 +64,8 @@ function hovfect(ye){
   var siu=ye.firstElementChild;
   siu.style.color="black";
   siu.style.cursor="default";
-  siu.style.letterSpacing="0.2em"
 }
 function gofect(ye){
   var siu=ye.firstElementChild;
   siu.style.color="white";
-  siu.style.letterSpacing="0"
 }
