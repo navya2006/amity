@@ -11,7 +11,7 @@ const authRoot = firebase.auth();
         const pass = $('#password').val();
         const promise = authRoot.createUserWithEmailAndPassword(mail, pass);
         promise.then(function (){
-            window.location.replace("index.html");
+            window.location.replace("dashboard/index.html");
         }).catch(function (e) {
             console.log("e");
             $("#error").html("Email id is Already in Use");
