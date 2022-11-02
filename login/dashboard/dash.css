@@ -1,0 +1,154 @@
+:root {
+    --text: #555b6e;
+    --black: #000;
+    --ajib-white: #8e6334;
+    --white: #eef0f2;
+    --ajib-black: #121212;
+    --dark-red: #de4949;
+    --light: #111;
+    --red: #450e0e;
+  }
+  
+  * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  
+  hr {
+    width: 60%;
+    border-color: var(--white);
+    border: 1px solid white;
+    transition: 0.4s !important;
+  }
+
+  .align-right {
+    text-align: right !important;
+  }
+  
+  .align-left {
+    text-align: left !important;
+  }
+  
+  .align-center {
+    text-align: center !important;
+  }
+  
+  .right {
+    float: right !important;
+  }
+  
+  .left {
+    float: left !important;
+  }
+  
+  a {
+    text-decoration: none !important;
+    color: #fff;
+  }
+  
+  a:hover {
+    text-decoration: none !important;
+    color: #eee;
+  }
+
+body{
+    background-color: var(--ajib-black);
+}
+
+/*DASHBOARD*/
+.dash{
+    margin: 5%;
+    padding: 1%;
+    background-color: var(--ajib-black);
+    box-shadow: 0 8px 30px -7px var(--black);
+    border-radius: 20px;
+}
+
+.dash .naman{
+    background-color: #222;
+    border-radius: 20px;
+    padding: 3%;
+}
+
+.dash .naman img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-top: 7%;
+    margin-bottom: 2%;
+}
+
+.dash .naman h2{
+    font-size: 18px;
+    color: var(--white);
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+}
+
+.aryan h1{
+    padding: 3%;
+    font-size: 25px;
+    color: var(--white);
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+}
+
+.dash .naman .bt{
+    font-size: 16px;
+    background-color: var(--white);
+    color: var(--ajib-black);
+    font-family: 'Cabin', sans-serif;
+    width: 40%;
+    border-radius: 20px;
+    font-weight: 400;
+    padding: 1%;
+    cursor: pointer;
+    margin-bottom: 7%;
+}
+
+.dash .naman h3{
+    font-size: 15px;
+    color: var(--white);
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    padding: 10px 5px 5px 20px;
+    padding-top: 17%;
+}
+
+/*SIDENAV*/
+.sidenav {
+    height: 100%;
+    z-index: 1;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    text-decoration: none;
+    font-size: 17px;
+    padding: 10px 5px 5px 20px;
+    color: #eee;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .main {
+    margin-left: 200px; 
+  }
+
+  .dash .yes{
+    font-size: 17px;
+    color: #eee;
+    padding-right: 10px;
+}
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
