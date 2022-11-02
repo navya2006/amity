@@ -14,6 +14,7 @@
   margin: 0px;
   cursor: none;
   box-sizing: border-box;
+  cursor: none !important;
 }
 
 hr {
@@ -26,8 +27,9 @@ hr {
 #trailer {
   height: 20px;
   width: 20px;
-  background-color: white;
-  border-radius: 20px;
+  background-color: transparent;
+  border-radius: 0;
+  border: 2px solid white;
   position: fixed;
   left: 0px;
   top: 0px;
@@ -227,7 +229,7 @@ body:hover > #trailer {
   padding-bottom: 5%;
 }
 .explore-grid {
-  row-gap: 1em;
+  row-gap: 3em;
   display: grid;
   grid-template-areas:
     "img1 explr img2"
@@ -479,6 +481,11 @@ input:focus, textarea:focus {
   border-bottom-color: rgb(100, 100, 100);
 }
 */
+
+.naman-yes {
+  width: 30vw;
+  height: 5vh;
+}
 
 .btn {
   border: #eee solid 2px;

@@ -1,39 +1,82 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <link href="main.css" type="text/css" rel="stylesheet">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link href="main.css" type="text/css" rel="stylesheet" />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Great+Vibes&family=Open+Sans:wght@300&family=Poiret+One&family=Poppins:wght@200&family=Public+Sans:wght@300&family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin&family=Great+Vibes&family=Open+Sans:wght@300&family=Poiret+One&family=Poppins:wght@200&family=Public+Sans:wght@300&family=Raleway:wght@200&display=swap"
+      rel="stylesheet"
+    />
 
-        <title>Login</title>
-    </head>
-    <body>
-        <div class="back-grad" id="home">
-            <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-6 login">
-                        <div class="login-form align-right">
-                            <h1 class="section-title">Login</h1>
-                            <form>
-                                <input id="username" placeholder="Email Id" name="username" type="email"><br>
-                                <input id="password" placeholder="Password" name="password" type="password"><br><br>
-                                Don't have an account yet? <a href="register.html">Register.</a><br><br>
-                                <p id="error"></p>
-                                <input id="submitb" class="button" type="submit" value="Submit">
-                            </form>
-                        </div>
-                </div>
-                <div class="col-md-3"></div>
-            </div>
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="back-grad" id="home">
+      <div class="row">
+        <div
+          class="col-md-6 login d-flex align-items-center justify-content-center"
+        >
+          <div class="login-form">
+            <h1 class="section-title">Login</h1>
+            <form>
+              <input
+                id="username"
+                placeholder="Email Id"
+                name="username"
+                type="email"
+              /><br />
+              <input
+                id="password"
+                placeholder="Password"
+                name="password"
+                type="password"
+              /><br /><br />
+              <br />
+              <p id="error"></p>
+              <input
+              id="submitb"
+              class="button"
+              type="submit"
+              value="Sign in"
+              /><br><br>
+              Don't have an account yet? <a class="jai-madhu" href="register.html">Sign Up</a
+            </form>
+          </div>
         </div>
+        <div
+          class="col-md-6 d-flex align-items-center justify-content-center hey-c"
+        >
+          <div class="okay-i-pull-up"></div>
+          <div class="hey"></div>
+        </div>
+      </div>
+    </div>
 
-        <script src="index.js"></script>
+    <script src="index.js"></script>
     <script src="fontawesome.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-auth.js"></script>
@@ -41,5 +84,5 @@
     <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
     <script src="init.js"></script>
     <script src="login.js"></script>
-    </body>
+  </body>
 </html>
