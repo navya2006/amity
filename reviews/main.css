@@ -1,0 +1,80 @@
+:root {
+    --text: #555b6e;
+    --black: #000;
+    --ajib-white: #8e6334;
+    --white: #eef0f2;
+    --ajib-black: #121212;
+    --dark-red: #de4949;
+    --light: #111;
+    --red: #450e0e;
+  }
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none !important;
+}
+
+a.mb-3 {
+    color: #eee;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+    background-image: url(music.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content {
+    padding-top: 50px;
+    text-align: center;
+    color: #eee;
+}
+
+.comment_input, .comment{
+    background-color: rgba(0,0,0,0.7);
+    margin: 20px 0px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    color: #eee;
+}
+
+input, textarea {
+    background-color: transparent;
+    border: transparent solid 2px;
+    border-bottom-color: var(--red);
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+    transition: 0.25s;
+    color: #eee;
+}
+
+input:focus, textarea:focus {
+    border-bottom-color: rgb(100, 100, 100);
+}
+
+.btn{
+    border:var(--red) solid 2px;
+    color: #eee;
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: 0.25s;
+    width: auto;
+}
+
+.btn:hover{
+    background-color: var(--red);
+    color: #fff;
+}
+
+.alert {
+    display: none;
+}

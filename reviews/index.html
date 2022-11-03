@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+
+<head>
+    <title>Comments</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 content">
+            <h1>Leave Us A Review?</h1>
+            <!-- Comment form -->
+            <div class="comment_input">
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" name="Name" id="name" placeholder="Name..." required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" name="Email" id="email" placeholder="Email Id..." required>
+                    </div>
+                </div>
+                <br>
+                <textarea type="text" name="comment" id="comment" placeholder="Comment..." rows="1" class="auto_height"
+                    oninput="auto_height(this)" required></textarea>
+                <br>
+                <input type="hidden" name="comment_post_ID" value="" id="comment_post_ID" />
+                <br>
+                <div class="alert text-danger">please input a valid value</div>
+                <button class="btn" name="submit" type="submit" id="compost" value="">Submit comment</button>
+            </div>
+            <!-- Where commments show us -->
+            <div class="comments"></div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <script src="init.js"></script>
+    <script src="comment.js"></script>
+    <script src="update.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
